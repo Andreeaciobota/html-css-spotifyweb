@@ -1,153 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Spotify Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+  <title>Spotify Web </title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
   <div id="wrapper">
     <main>
-    
+     
       <nav id="main_nav">
         
-        <section class="top_nav">
-          <div class="logo_nav">
-            <img src="./img/logo.svg" alt="Logo Spotify">
+        <div class="nav_logo">
+         
+          <div class="logo_big">
+            <a href="#"><img src="img/logo.svg" alt="Logo Spotify"></a>
           </div>
-
-          <div class="menu_nav">
-            <ul>
-              <li>home</li>
-              <li>cerca</li>
-              <li>la tua libreria</li>
-            </ul>
-          </div>
-
-          <div class="playlist_nav">
-            <h3>playlist</h3>
-            <span>+ crea playlist</span>
-            <ul class="list">
-              <li>nome playlist</li>
-              <li>nome playlist</li>
-              <li>nome playlist</li>
-              <li>nome playlist</li>
-              <li>nome playlist</li>
-              <li>nome playlist</li>
-              <li>nome playlist</li>
-              <li>nome playlist</li>
-              <li>nome playlist</li>
-              <li>nome playlist</li>
-            </ul>
-          </div>
-        </section>
-       
-        <div class="bottom_nav">
-          <div class="install_nav">
-            installa app
-          </div>
-
-          <div class="profile_nav">
-            Andreea Ciobota 
+          
+          <div class="logo_small">
+            <a href="#"><img src="img/logo-small.svg" alt="Logo Spotify small"></a>
           </div>
         </div>
-      
-
-      </nav>
-    
-      <section id="main_section">
-        <div class="call_to_action">
-          <a href="#">effettua l'upgrade</a>
-        </div>
-
-        <nav class="menu_main">
+        <div class="nav_menu">
           <ul>
-            <li>in evidenza</li>
-            <li>podcast</li>
-            <li>classifiche</li>
-            <li>generi e mood</li>
-            <li>nuove uscite</li>
-            <li>scopri</li>
+            <li class="select">
+              <a href="#"><img src="img/home.svg" alt="home"><span class="hidden_small">Home</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/search.svg" alt="search"><span class="hidden_small">Cerca</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/libreria.svg" alt="search"><span class="hidden_small">La tua libreria</span></a>
+            </li>
+          </ul>
+        </div>
+       
+        <div class="nav_playlist_create">
+          <h3>playlist</h3>
+          <a href="#"><i class="fas fa-plus-square"></i><span>Crea Playlist</span></a>
+        </div>
+        <!-- lista playlist -->
+        <div class="nav_playlist">
+          <ul>
+            <li><a href="#">My heart broke</a></li>
+            <li><a href="#">Nostalgic </a></li>
+            <li><a href="#">Pure chaos</a></li>
+            <li><a href="#">Calm before storm</a></li>
+            <li><a href="#">Happy times</a></li>
+            <li><a href="#">A Darker</a></li>
+            <li><a href="#">Sunny Day</a></li>
+            <li><a href="#">illegal</a></li>
+            <li><a href="#">Zero Stress</a></li>
+            <li><a href="#">Bob Marley</a></li>
+            <li><a href="#">Magic Hower</a></li>
+            <li><a href="#">Game Day</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">ULTIMA PLAYLIST</a></li>
+          </ul>
+        </div>
+       
+        <div class="nav_bottom">
+          <!-- box download -->
+          <div class="install_nav">
+            <a href="#"><img src="img/download.svg" alt="download"><span class="hidden_small">Installa app</span></a>
+          </div>
+          <!-- box profilo -->
+          <div class="profile_nav">
+            <a href="#"><img src="img/7A20B10A-F3F2-4EC8-B0BB-263556003469_1_105_c.jpeg" alt="profile"><span class="hidden_small">Andreea Ciobota </span></a>
+          </div>
+        </div>
+      </nav>
+      <section id="main_content">
+        
+        <div class="call_to_action">
+          <a href="#" class="btn upgrade">effettua l'upgrade</a>
+        </div>
+        
+        <nav class="main_content_nav">
+          <ul class="main_content_nav_list">
+            <li><a href="#">in evidenza</a></li>
+            <li><a href="#">podcast</a></li>
+            <li><a href="#">classifiche</a></li>
+            <li><a href="#">generi e mood</a></li>
+            <li><a href="#">nuove uscite</a></li>
+            <li><a href="#">scopri</a></li>
           </ul>
         </nav>
-
-        <div class="main_content">
-          <section id="recently_played">
+        
+        <section id="played">
+          <h2>Recently Played</h2>
           
-            <div class="title_section">
-              <h2>Recently Played</h2>
-            </div>
-
-            <div class="played_box">
-              <div class="played_img">
-
+          <ul class="played_list">
+            
+            <li class="played_element">
+              <!-- box immagine -->
+              <div class="cover">
+                <img src="img/metal_lifting.jpg" alt="heavy-metal">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
               </div>
-              <h3>titolo</h3>
-              <p>sottotitolo</p>
-            </div>
-
-            <div class="played_box">
-              <div class="played_img">
-
+              <div class="cover_text">
+                <h3>Heavy Metal</h3>
+                <p>Metallo pesante per te</p>
               </div>
-              <h3>titolo</h3>
-              <p>sottotitolo</p>
-            </div>
-
-            <div class="played_box">
-              <div class="played_img">
-
+            </li>
+            <!-- secondo elemento -->
+            <li class="played_element">
+              <div class="cover">
+                <img src="img/stranger.jpeg" alt="stranger things">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
               </div>
-              <h3>titolo</h3>
-              <p>sottotitolo</p>
-            </div>
-
-            <div class="played_box">
-              <div class="played_img">
-
+              <div class="cover_text">
+                <h3>Stranger Things, Vol.1 (A Netflix Original Series Soundtrack)</h3>
+                <p>Kyle Dixon &amp; Michael Stein</p>
               </div>
-              <h3>titolo</h3>
-              <p>sottotitolo</p>
-            </div>
-
-            <div class="played_box">
-              <div class="played_img">
-
+            </li>
+            <!-- terzo elemento -->
+            <li class="played_element">
+              <div class="cover">
+                <img src="img/aquietplace.jpeg" alt="a quiet place">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
               </div>
-              <h3>titolo</h3>
-              <p>sottotitolo</p>
-            </div>
-
-            <div class="played_box">
-              <div class="played_img">
-
+              <div class="cover_text">
+                <h3>A quiet place</h3>
+                <p>Vai tranquillo</p>
               </div>
-              <h3>titolo</h3>
-              <p>sottotitolo</p>
-            </div>
-          </section>
+            </li>
+            <!-- quarto elemento -->
+            <li class="played_element">
+              <div class="cover">
+                <img src="img/split.jpeg" alt="split">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="cover_text">
+                <h3>Split</h3>
+                <p>Piacere, Franco! Ciao Franco!
+                No sono Luca</p>
+              </div>
+            </li>
+            <!-- quinto elemento -->
+            <li class="played_element">
+              <div class="cover">
+                <img src="img/cure.jpeg" alt="la cura della bellezza">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="cover_text">
+                <h3>A Cure for Wellness</h3>
+                <p>Grazie ma mi piaccio così come sono</p>
+              </div>
+            </li>
+            <!-- sesto elemento -->
+            <li class="played_element">
+              <div class="cover">
+                <img src="img/sinister.jpeg" alt="sinister">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="cover_text">
+                <h3>Sinister</h3>
+                <p>Si ma io scrivo con la destra</p>
+              </div>
+            </li>
+          </ul>
+        
+        </section>
+       
+        <section id="create">
+          <h2>Creato per Andreea Ciobota </h2>
+          <p>Più ascolti, più accurati saranno i suggerimenti</p>
+          <ul class="played_list">
+            
+            <!-- primo elemento -->
+            <li class="played_element">
+              <div class="cover">
+                <img src="img/radar.jpeg" alt="radar">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
+              </div>
+          
+              <div class="cover_text">
+                <h3>Release Radar</h3>
+              </div>
+            </li>
 
-          <section id="create_for">
-            <h2>Creato per Andreea Ciobota </h2>
-          </section>
+            <!-- secondo elemento -->
+            <li class="played_element">
+              <div class="cover">
+                <img src="img/mixdaily.jpeg" alt="daily mix">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="cover_text">
+                <h3>Daily Mix</h3>
+              </div>
+            </li>
+          </ul>
+        </section>
+      
+        <section id="popular">
+          <h2>Artisti più popolari</h2>
+          <p>Più ascolti, più accurati saranno i suggerimenti</p>
+          <ul class="played_list">
+            
+            <li class="played_element">
+             
+              <div class="cover">
+                <img src="img/youg.jpeg" alt="Lana Del Rey">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              
+              <div class="cover_text">
+                <h3>Lana Del Rey</h3>
+              </div>
+            </li>
 
-          <section id="popular">
-            <h2>Artisti più popolari</h2>
-          </section>
-        </div>
+            <!-- secondo elemento -->
+            <li class="played_element">
+              <div class="cover">
+                <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                <div class="img_layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="cover_text">
+                <h3>Ludovico Einaudi</h3>
+              </div>
+            </li>
+          </ul>
+         
+        </section>
       </section>
-      <!-- / main-section -->
-
+   
     </main>
-    <!-- / main -->
-    <!-- footer -->
-    <footer>
-    </footer>
-    <!-- / footer -->
   </div>
+  <footer>
+    <section id="player">
+      <div class="song">
+        <div class="song_cover">
+          <img src="img/metal_lifting.jpg" alt="Song Cover">
+        </div>
+        <div class="song_name">
+          <a href="#"><h3>Heavy Metal</h3></a>
+          <a href="#"><p>Song Name</p></a>
+        </div>
+        <div class="song_save">
+          <a href="#"><i class="far fa-heart"></i></a>
+          <a href="#"><i class="far fa-folder"></i></a>
+        </div>
+      </div>
+
+      <div class="controller">
+        <div class="player_button">
+          <ul>
+            <li><a href="#"><i class="fas fa-random"></i></a></li>
+            <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+            <li class="bigger"><a href="#"><i class="far fa-play-circle"></i></a></li>
+            <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+            <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+          </ul>
+
+        </div>
+
+        <div class="player_time">
+          <div class="time_go">0:30</div>
+
+          <div class="time_barr">
+            <div class="go_barr">
+              <div class="barr_point"></div>
+            </div>
+          </div>
+
+          <div class="time_tot">4:20</div>
+
+        </div>
+
+      </div>
+
+      <div class="audio green">
+
+      </div>
+
+    </section>
+
+  </footer>
 </body>
 </html>
+
+ 
