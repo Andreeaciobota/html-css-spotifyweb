@@ -22,13 +22,18 @@ main::after {
 }
 
 nav#main_nav {
-  width: 300px;
+  width: 250px;
   height: calc(100% - 100px);
   min-height: 450px;
   background-color: rgb(108, 87, 120);
   position: fixed;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  nav#main_nav {
+    width: 50px;
+  }
 }
 
 .top_nav {
@@ -80,24 +85,37 @@ nav#main_nav {
 }
 
 #main_section {
-    width: calc(100% - 300px);
-    margin-left: 300px;
+    width: calc(100% - 250px);
+    margin-left: 250px;
     float: left;
     background-color: rgb(101, 6, 204);
     overflow-y: auto;
+  }
+  @media screen and (max-width: 600px) {
+    #main_section {
+      width: calc(100% - 50px);
+      margin-left: 50px;
+    }
   }
 
 
 
 #main_section .call_to_action {
   height: 100px;
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   background-color: rgba(0, 0, 0, 0.68);
   text-align: right;
   line-height: 100px;
   position: fixed;
   color: white;
   z-index: 1;
+}
+@media screen and (max-width: 600px) {
+  #main_section .call_to_action {
+    height: 100px;
+    width: calc(100% - 50px);
+
+  }
 }
 
 .call_to_action a {
@@ -136,7 +154,7 @@ nav#main_nav {
   height: 100px;
   background-color: rgb(231, 26, 166);
 }
-ooter {
+footer {
   width: 100%;
   height: 100px;
   background-color: green;
