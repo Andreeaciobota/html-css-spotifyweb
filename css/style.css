@@ -427,6 +427,26 @@ section#player {
   color: #999999;
   font-size: 11px;
 }
+@media screen and (max-width: 768px) {
+  
+  #player .song .song_cover {
+    height: 60%;
+  }
+
+  
+  #player .song .song_name {
+    margin-right: 0px;
+  }
+
+ 
+  #player .song .song_name h3 {
+    font-size: 11px;
+  }
+
+  #player .song .song_name p {
+    font-size: 9px;
+  }
+}
 
 #player .song .song_save a:first-child {
   padding-right: 5px;
@@ -457,6 +477,53 @@ section#player {
 .bigger a {
   font-size: 35px;
 }
+@media screen and (max-width: 992px) {
+  #player .controller {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #player .controller .player_button ul li {
+    font-size: 15px;
+  }
+
+ 
+  .bigger a {
+    font-size: 20px;
+  }
+
+  #player .controller {
+    padding: 0 15px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #player .controller .player_button ul li {
+    font-size: 12px;
+  }
+
+  .bigger a {
+    font-size: 16px;
+  }
+
+  #player .controller {
+    padding: 0 15px;
+  }
+
+
+  #player .controller .player_button ul li {
+    padding: 0 5px;
+  }
+
+}
+
+@media screen and (max-width: 424px) {
+  #player .controller .player_button ul li {
+    padding: 0 2px;
+  }
+}
 .bigger:hover a {
   transform: scale(1.2);
 }
@@ -469,6 +536,12 @@ section#player {
   color: #999999;
   font-size: 12px;
   padding-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .player_time .time_go {
+    font-size: 10px;
+    padding-right: 10px;
+  }
 }
 
 .time_barr {
@@ -513,9 +586,93 @@ section#player {
   font-size: 12px;
   padding-left: 20px;
 }
+@media screen and (max-width: 768px) {
+  .player_time .time_tot {
+    font-size: 10px;
+    padding-left: 10px;
+  }
+}
 
 #player .audio {
-  width: 100px;
+  width: 17%;
+  padding: 10px;
+}
+#player .audio {
+  width: 17%;
+  padding: 10px;
+}
+
+#player .audio .audio_list {
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+#player .audio .audio_list .audio_volume {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#player .audio .audio_list .audio_volume a {
+  padding-right: 10px;
+}
+
+
+.audio_barr {
+  height: 4px;
+  border-radius: 4px;
+  background-color: #999999;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+
+.audio_barr .go_barr {
+  position: relative;
+  height: 100%;
+  width: 20%;
+  border-radius: 4px;
+  background-color: white;
+}
+
+
+.audio_barr .barr_point {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
+
+.audio_barr:hover .barr_point {
+  display: block;
+}
+
+
+.audio_barr:hover .go_barr {
+  background-color: rgb(92, 167, 90);
+}
+
+
+@media screen and (max-width: 880px) {
+ 
+  #player .audio .audio_list .audio_volume {
+    width: 100%;
+  }
+
+  #player .audio .audio_list {
+    justify-content: space-around;
+  }
 }
 /* / FOOTER */
